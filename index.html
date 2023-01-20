@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/f8eee8db45.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="split-button">
+      <button onclick="handleMainButtonClicked()">Dashboard</button>
+      <button onclick="toggleDropdown()">
+        <span id="chevron" class="chevron material-symbols-outlined"> ⇲ </span>
+      </button>
+      <div id="menu" class="menu">
+        <button onclick="handleMenuButtonClicked()">
+          <span class="material-symbols-outlined"
+            ><i class="fa fa-light fa-wrench"></i>
+          </span>
+          Tools
+        </button>
+        <button onclick="handleMenuButtonClicked()">
+          <span class="material-symbols-outlined">
+            <i class="fa fa-light fa-gear"></i>
+          </span>
+          Settings
+        </button>
+        <button onclick="handleMenuButtonClicked()">
+          <span class="material-symbols-outlined">
+            <i class="fa fa-light fa-lock"></i>
+          </span>
+          Account
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
